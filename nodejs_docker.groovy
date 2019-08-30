@@ -14,7 +14,7 @@ job('NodeJS Docker example_DSL publish') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('epsilonradius/Jenkins_DSL')
+            repositoryName('epsilonradius/jenkins_dsl')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
             forcePull(false)
