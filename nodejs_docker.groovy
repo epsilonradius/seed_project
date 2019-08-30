@@ -1,4 +1,4 @@
-job('NodeJS Docker example1') {
+job('NodeJS Docker example_DSL publish') {
     scm {
         git('https://github.com/epsilonradius/Docker-NodeJS-app.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
