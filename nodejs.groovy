@@ -1,8 +1,8 @@
-job('NodeJS examplei2_DSL') {
+job('NodeJS example2_DSL') {
     scm {
-        git('git://github.com/gerwaismomo/docker-demo-wardviaene.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/epsilonradius/Docker-NodeJS-app.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
-            node / gitConfigEmail('gerwaismomo@gmail.com')
+            node / gitConfigEmail('epsilonradius@gmail.com')
         }
     }
     triggers {
